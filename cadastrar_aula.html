@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastrar Aula | NetNúcleo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="header-container">
+<a href="index.html" class="logo-area"><img src="img/logo.png" alt="SESI e SENAI" class="institution-logo"><h3 class="netindex">NETNÚCLEO - HORTO</h3></a>
+<nav class="navigation">
+<a href="index.html">Início</a>
+<a href="cadastrar_aula.html" class="active">Cadastrar aula</a>
+<a href="cadastrar_instrutor.html">Instrutor</a>
+<a href="consulta.html">Consultas</a>
+<a href="login.html">Sair</a>
+</nav></div></header>
+<main class="page-main"><div class="container">
+<div class="page-title"><span class="section-label">CADASTRO</span><h1>Cadastrar aula</h1></div>
+<section class="filter-card"><form onsubmit="event.preventDefault(); alert('Formulário demonstrativo: o cadastro real depende do backend.');">
+<div class="form-group"><label>Data</label><input type="date" name="dataAula" required></div>
+<div class="form-group"><label>Horário inicial</label><input type="time" name="horarioinicioAula" required></div>
+<div class="form-group"><label>Horário final</label><input type="time" name="horariofimAula" required></div>
+<div class="form-group"><label>Período</label><input type="text" name="turnoAula" required></div>
+<div class="form-group"><label>Instrutor</label><input type="text" name="idInstrutor" placeholder="ID ou nome"></div>
+<div class="form-group"><label>Matéria</label><input type="text" name="idMateria" placeholder="ID ou nome"></div>
+<div class="form-group"><label>Turma</label><input type="text" name="idTurma" placeholder="ID ou nome"></div>
+<div class="form-group"><label>Sala</label><input type="text" name="idSala"></div>
+<div class="form-group"><label>Tipo</label><input type="text" name="tipoAula" value="Presencial"></div>
+<div class="form-actions"><button class="button button-primary" type="submit">Salvar aula</button><a class="button button-secondary" href="cadastrar_instrutor.html">Cadastrar instrutor</a></div>
+</form></section>
+</div></main>
+</body></html>
